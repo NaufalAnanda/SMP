@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri - SMPN 1 Batulayar</title>
+  <meta name="description" content="Galeri kegiatan SMPN 1 Batulayar: belajar, upacara, ekstrakurikuler, lomba, dan wisata edukasi." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-brand"><span class="logo">SN</span><span>SMPN 1 Batulayar</span></a>
+      <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav-menu">
+        <a href="../index.html">Home</a>
+        <a href="profile.html">Profil</a>
+        <a href="teachers.html">Guru</a>
+        <a href="gallery.html">Galeri</a>
+        <a href="news.html">Berita</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Galeri Kegiatan</h1>
+      <p>Dokumentasi berbagai aktivitas dan momen berharga di SMPN 1 Batulayar.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-filter">
+        <button class="active" data-filter="all">Semua</button>
+        <button data-filter="belajar">Kegiatan Belajar</button>
+        <button data-filter="upacara">Upacara</button>
+        <button data-filter="ekstra">Ekstrakurikuler</button>
+        <button data-filter="lomba">Lomba</button>
+        <button data-filter="wisata">Wisata Edukasi</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="belajar" data-title="Kelas Matematika">
+          <div class="ph" style="background:linear-gradient(135deg,#0b2e59,#1d4d8a);">Kelas Matematika</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="belajar" data-title="Praktikum Lab IPA">
+          <div class="ph" style="background:linear-gradient(135deg,#1d4d8a,#2e7bb8);">Praktikum Lab IPA</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="upacara" data-title="Upacara Bendera">
+          <div class="ph" style="background:linear-gradient(135deg,#06283d,#1363df);">Upacara Bendera</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="upacara" data-title="HUT Kemerdekaan">
+          <div class="ph" style="background:linear-gradient(135deg,#b22222,#0b2e59);">HUT Kemerdekaan</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="ekstra" data-title="Basket Tim">
+          <div class="ph" style="background:linear-gradient(135deg,#e67e22,#d35400);">Basket Tim</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="ekstra" data-title="Pramuka">
+          <div class="ph" style="background:linear-gradient(135deg,#27ae60,#16a085);">Pramuka</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="ekstra" data-title="Paduan Suara">
+          <div class="ph" style="background:linear-gradient(135deg,#8e44ad,#3498db);">Paduan Suara</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="lomba" data-title="Olimpiade Sains">
+          <div class="ph" style="background:linear-gradient(135deg,#0b2e59,#34495e);">Olimpiade Sains</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="lomba" data-title="Lomba Debat">
+          <div class="ph" style="background:linear-gradient(135deg,#2c3e50,#1d4d8a);">Lomba Debat</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="wisata" data-title="Study Tour Bandung">
+          <div class="ph" style="background:linear-gradient(135deg,#16a085,#0b2e59);">Study Tour Bandung</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="wisata" data-title="Kunjungan Museum">
+          <div class="ph" style="background:linear-gradient(135deg,#7f8c8d,#34495e);">Kunjungan Museum</div>
+          <div class="overlay">Lihat</div>
+        </div>
+        <div class="gallery-item" data-category="belajar" data-title="Diskusi Kelompok">
+          <div class="ph" style="background:linear-gradient(135deg,#2980b9,#0b2e59);">Diskusi Kelompok</div>
+          <div class="overlay">Lihat</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" aria-label="Tutup">&times;</button>
+    <div class="lightbox-content"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand"><span class="logo">SN</span><span>SMPN 1 Batulayar</span></div>
+          <p>Sekolah unggulan yang berkomitmen membentuk generasi cerdas dan berkarakter.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="teachers.html">Guru</a></li>
+            <li><a href="gallery.html">Galeri</a></li>
+            <li><a href="news.html">Berita</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <p>Jl. Pendidikan No. 123<br/>Jakarta, Indonesia<br/>📞 (021) 555-1234</p>
+        </div>
+        <div>
+          <h4>Ikuti Kami</h4>
+          <div class="social"><a href="#">f</a><a href="#">ig</a><a href="#">yt</a><a href="#">x</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; <span id="year"></span> SMPN 1 Batulayar. Hak cipta dilindungi.</div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
